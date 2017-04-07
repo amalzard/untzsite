@@ -1,5 +1,5 @@
 <?php
-require_once('./includes/dbconnect.php');
+require_once ('./includes/dbconnect.php');
 
 session_start();
 if ($conn->connect_errno) {

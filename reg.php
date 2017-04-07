@@ -1,6 +1,8 @@
 <?php
 require_once('./includes/dbconnect.php');
 
+$usertablename = 'users';
+
 if ($conn->connect_errno) {
 	die('Could not connect: ' . $conn->connect_error);
 }
@@ -30,8 +32,8 @@ if (strlen($email) > 64) {
 	echo "<br><a href=$baseurl/register.html>Go back</a>";
 	die();
 }
-$namequery = "SELECT username FROM $usertablename WHERE username = '$username'";
-$emailquery = "SELECT email FROM $usertablename WHERE email = '$email'";
+$namequery = "SELECT username FROM users WHERE username = '$username'";
+$emailquery = "SELECT email FROM users WHERE email = '$email'";
 $nameresult = $conn->query($namequery);
 $emailresult = $conn->query($emailquery);
 if (mysqli_num_rows($nameresult) >= 1) {

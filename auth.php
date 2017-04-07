@@ -1,7 +1,7 @@
 <?php
 require_once('./includes/dbconnect.php');
 
-
+$usertablename = 'users';
 
 if(empty($_GET['user']))
 
@@ -28,7 +28,7 @@ else
 
     $_SESSION["streamerID"] = $_GET['user'];
 
-    $query = "SELECT idhash FROM $usertablename WHERE idhash = '$testusername'";
+    $query = "SELECT idhash FROM users WHERE idhash = '$testusername'";
     $result = $conn->query($query);
 
 

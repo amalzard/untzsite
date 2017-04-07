@@ -5,7 +5,7 @@ function db_connect() {
 
 	if(!isset($conn)) {
 		$config = parse_ini_file('../private/config.ini');
-		$conn = mysql_connect($config['servername'],$config['username'],$config['password'],$config['dbname']);
+		$conn = mysqli_connect($config['host'],$config['username'],$config['password'],$config['dbname']);
 	}
 
 	if($conn === false) {
@@ -14,7 +14,7 @@ function db_connect() {
 	return $conn;
 }
 
-$conn = db_connnect();
+$conn = db_connect();
 
 if($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
