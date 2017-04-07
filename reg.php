@@ -1,7 +1,6 @@
 <?php
-include "common.php";
+require_once('./includes/dbconnect.php');
 
-$conn = new mysqli($host, $username, $password, $dbname);
 if ($conn->connect_errno) {
 	die('Could not connect: ' . $conn->connect_error);
 }
