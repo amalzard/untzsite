@@ -1,0 +1,148 @@
+body {
+    	background-color: #2E2E2E;    
+}
+
+@font-face {
+	font-family: untzFontBold;
+	src: url(microgrammadmedext.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: untzFont;
+	src: url(microgrammadmedext.ttf);
+}
+
+.header div {
+	position: top right;
+}
+
+.page{
+	position: relative;
+	width: 100%;
+	margin-right: 500px;
+}
+
+#stat div{
+	display: table;
+		
+}
+
+.statContainer{
+margin-right: 250px;
+}
+
+.reminder div {
+	display: table;
+}
+
+.PopOut{
+	color: white;
+	font-family: untzFont;
+	position: relative;
+	border-radius: 25px;
+	height: 15%;
+	width: auto;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	padding: 0.5%;
+	margin: 1%;
+}
+
+.unselectable {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+cursor: pointer;
+}
+
+
+.buttonGrey {
+	background-color: #404040;
+}
+
+.statsBackground{
+	color: white;
+	font-family: untzFont;
+	position: relative;
+	border-radius: 25px;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	padding: 0.5%;
+	margin: 1%;
+}
+
+.streamStatsGrey {
+	background-color: #404040;
+}
+
+#current {
+        color:white;
+}
+
+.info {
+	color:white;
+	text-align: center;	
+	margin-left: 0px;
+}
+
+.drunek div {
+	display: block;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.loginstate div {
+	display: inline-block;
+}
+
+.title div {
+	width: 60%;
+	overflow: hidden;
+}
+
+.loginstate div {
+	float: right;
+	margin-left: 60%;
+}
+
+#panel, .flip {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    background-color: #36393e;
+    color: black;
+    border: solid 1px #000000;
+    margin-right: 300px;
+}
+
+#panel {
+    display: none;
+}
+
+#sidebar {
+   width: 500px;
+   height: 100%;
+   position: fixed;
+   right: 0px;
+   top: 0px;
+   border: 1px solid black;
+   overflow-y: hidden;
+}
+
+.video {
+   margin-right: 500px;
+}
+
+.audio {
+   margin-right: 500px;
+}
+
+.PopOut:hover{
+background: #808080;
+}
