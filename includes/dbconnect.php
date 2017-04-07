@@ -1,22 +1,22 @@
 <?php
 function db_connect() {
 
-	static $connection;
+	static $conn;
 
-	if(!isset($connection)) {
+	if(!isset($conn)) {
 		$config = parse_ini_file('../private/config.ini');
-		$connection = mysql_connect($config['servername'],$config['username'],$config['password'],$config['dbname']);
+		$conn = mysql_connect($config['servername'],$config['username'],$config['password'],$config['dbname']);
 	}
 
-	if($connection === false) {
+	if($conn === false) {
 		return mysql_connect_error();
 	}
-	return $connection;
+	return $conn;
 }
 
-$connection = db_connnect();
+$conn = db_connnect();
 
-if($connection->connect_error) {
-	die("Connection failed: " . $connection->connect_error);
+if($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
 }
 ?>

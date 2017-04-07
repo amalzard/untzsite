@@ -1,8 +1,5 @@
 <?php
-include "common.php";
-
-
-$conn = new mysqli($host, $username, $password, $dbname);
+require_once('./includes/dbconnect.php');
 
 
 
