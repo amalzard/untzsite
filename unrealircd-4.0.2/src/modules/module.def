@@ -1,5 +1,0 @@
-EXPORTS
-	Mod_Header
-	Mod_Init
-	Mod_Load
-	Mod_Unload
