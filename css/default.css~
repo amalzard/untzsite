@@ -88,7 +88,6 @@ cursor: pointer;
 .info {
 	color:white;
 	text-align: center;	
-	margin-left: 0px;
 }
 
 .drunek div {
@@ -133,6 +132,7 @@ cursor: pointer;
    top: 0px;
    border: 1px solid black;
    overflow-y: hidden;
+	transition: 0.5s;
 }
 
 .video {
