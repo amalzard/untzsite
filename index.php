@@ -52,21 +52,23 @@ session_start();
 	</div>
 
 	<div class='statContainer'>
-		<div id="stat">
-			<div class='statsBackground streamStatsGrey' id='viewcount' style="font-family:untzFont;"><span id='viewcount'></span></div>
-			<div class='statsBackground streamStatsGrey' id='current' style="font-family:untzFont;"><span id='current'></span></div>
-		</div>
+		<table align="center" style="width: 70%; text-align: center; table-layout: fixed;">
+			<tr>
+				<td><div class='statsBackground streamStatsGrey' id='viewcount' style="font-family:untzFont; width: 100%;"><span id='viewcount'></span></div></td>
+				<td><div class='statsBackground streamStatsGrey' id='current' style="font-family:untzFont; width: 100%;"><span id='current'></span></div></td>
+			</tr>
+			<tr>
+				<td><div class='buttonGrey unselectable statsBackground streamStatsGrey' onclick="popChat()" style="width: 100%;">
+			<span>Pop-out Chat</span>
+		</div></td>
+				<td><div class='buttonGrey unselectable statsBackground streamStatsGrey' id='click' style="width: 100%;">
+		<span>Show/Hide Chat Sidebar</span>
+	</div></td>
+			</tr>
+		</table>
 	</div>
 
-
-	<div class="reminder">
-		<div align= 'center' class='PopOut buttonGrey unselectable' onclick="popChat()">
-			<span class='PopOut'>Pop-out Chat</span>
-		</div>
-	</div>
-	<div align= 'center' class='PopOut buttonGrey unselectable' id='click'>
-		<span class='PopOut'>Show/Hide Chat Sidebar</span>
-	</div>
+	
 </div>
 
 <div class="info" style="font-family:untzFont;">
@@ -142,12 +144,14 @@ $('#click').click(function()	//function that changes margin properties of conten
 		$('.info').css('margin-left', '250px');
 		$('.info').css('margin-right', '250px');
 		$('.statContainer').css('margin-left', '250px');
+		$('.statContainer').css('margin-right', '250px');
 	}else {
 		$('.video').css('margin-right', '500px');
 		$('.video').css('margin-left', '0px');
 		$('.info').css('margin-right', '500px');
 		$('.info').css('margin-left', '0px');
 		$('.statContainer').css('margin-left', '0px');
+		$('.statContainer').css('margin-right', '500px');
 	}
 
 		

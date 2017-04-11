@@ -29,7 +29,9 @@ body {
 }
 
 .statContainer{
-margin-right: 250px;
+	text-align: center;	
+	margin-right: 500px;
+	margin-left: 0px;
 }
 
 .reminder div {
@@ -44,10 +46,12 @@ margin-right: 250px;
 	height: 15%;
 	width: auto;
 	float: left;
-	font-size: 12px;
+	font-size: 16px;
 	text-align: center;
-	padding: 0.5%;
-	margin: 1%;
+	padding: 1%;
+	margin: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 .unselectable {
@@ -71,10 +75,12 @@ cursor: pointer;
 	position: relative;
 	border-radius: 25px;
 	float: left;
-	font-size: 12px;
+	font-size: 16px;
 	text-align: center;
-	padding: 0.5%;
-	margin: 1%;
+	padding: 1%;
+	margin: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 .streamStatsGrey {
@@ -148,3 +154,12 @@ cursor: pointer;
 .PopOut:hover{
 background: #808080;
 }
+table {
+width: 100%;
+table-layout: fixed;
+}
+
+table.td {
+width: 50%;
+}
+
