@@ -46,7 +46,7 @@ if (mysqli_num_rows($emailresult) >=1) {
 	echo "<br><a href=$baseurl/register.html>Go back</a>";
 	die();
 }
-$idhash = genkey();
+$idhash = uniqid();
 $query = "INSERT INTO $usertablename (username, email, password, idhash) VALUES ('$username', '$email', '$password', '$idhash')";
 $conn->query($query);
 echo "Server URL: " . $streamurl . "<br>";

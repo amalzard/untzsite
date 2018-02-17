@@ -10,7 +10,8 @@ session_start();
 <title>Welcome to UNTZ!</title>
 <script src="./jwplayer/jwplayer.js"></script>
 <script>jwplayer.key="Zas9MYoZBb7BspmsIndG3D3Cgkd595f9XA5Z/A==";</script>
-
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
