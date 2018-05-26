@@ -25,7 +25,7 @@ if (mysqli_num_rows($result) == 1) {
 }
 else {
 	echo "Invalid username/password combination";
-	echo "<br><a href=$baseurl/pizzalogin.html>Go back</a>";
+	echo "<br><a href=$baseurl/index.php>Go back</a>";
 	die();
 }
 ?>
