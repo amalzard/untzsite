@@ -71,19 +71,6 @@ session_start();
 	
 </div>
 
-<div class="info" style="font-family:untzFont;">
-	<h1><br/><br/> Welcome to UNTZTIME live broadcast! </h1>
-	Only LIVE DJ mixing with hardcore, j-core, house and EDM weeb tunes straight out of Japan.<br>
-	<h2> Like us? </h2>
-	Join our Discord community to chat with fellow untzers:<br>
-	https://discord.gg/0ha2CfyN2PXNiE9H<br>
-	Follow us on Twitter for anime streams, gaming streams, events and more:<br>
-	https://twitter.com/UntzTime<br>
-	Join our steam group and plan some vidya sessions:<br>
-	http://steamcommunity.com/groups/untztime<br>
-	<br>
-</div>
-
 <div id='sidebar'>
 <iframe src="https://kiwiirc.com/client?settings=5f7ff90fe655abb1a1f1b10440184afd" width="100%" height="100%" align="right" scrolling="no" seamless="no"></iframe>
 </div>
